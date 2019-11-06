@@ -1,13 +1,152 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background: #539cb6;
+	margin: 1rem;
+	padding: 0;
+	font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.h1 {
+	text-align: center;
+	margin-top: 1.5rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: rgb(73, 15, 15);
+	font-display: bold;
+}
+
+.help{
+	padding: 0.6rem;
+	color: black;
+}
+
+/* ##### general ##### */
+* {
+	box-sizing: border-box;
+	box-shadow: #3b3b3b;
+}
+main {
+	padding: 0 2rem;
+}
+
+/* ##### Search ##### */
+.header {
+	margin-bottom: 0;
+	margin-left: 15px;
+	font-size: 20px;
+	color: #0a2c12;
+
+}
+input[type='text'] {
+	margin: 1rem;
+	background: #fff;
+	font-size: 1.3rem;
+	border: black;
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	padding: 0 2rem;
+	width: calc(100% - 4rem);
+	height: 3rem;
+}
+
+/* ##### NamesList ##### */
+tr {
+	padding: 0 1rem;
+}
+th {
+	position: left;
+	list-style: none;
+	padding: 0.25rem 0.75rem;
+	margin: 3px;
+	border-radius: 3px;
+	border: #3b3b3b;
+}
+td:hover {
+	position: left;
+	cursor: pointer;
+	background-color: #ddd;
+}
+
+/* ##### Columns ##### */
+.column1 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+.column2 {
+	float: left;
+	width: 50%;
+	padding: 20px;
+	background-color: #ccdef9;
+}
+
+
+/* ##### Rows ##### edit all, reduce to just row*/
+.row {
+	margin: 1rem;
+}
+.row:after {
+	padding: 1 0rem;
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tableWrapper {
+	max-height: 800px;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+/* ##### Footer ##### */
+.credit {
+	padding: 1rem 0;
+	color: #b3b3b3;
+}
+.credit a {
+	color: #3498bb;
+}
+
+button {
+	background: #d7d7d7;
+	color: #3b3b3b;
+	padding: 0.6rem 1rem;
+	font-size: 0.8rem;
+	border: solid 1px #c7c7c7;
+	margin: 1rem 0;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	outline: none;
+}
+button:hover {
+	background: #ddd;
+}
+
+.card {
+	background: #ffffff;
+	border-radius: 10px;
+	border-color: #000000;
+	border-width: 10px;
+	border-style: solid;
+	padding:  0.6rem 0.5rem;
+}
+.listings li {
+	list-style: none;
+	text-align: left;
+	font-size: 18px;
+	height: auto;
+	padding: 5px;
+}
+.dh {
+	color: rgb(4, 23, 75);
+	font-size: 22px;
+	font-display: bold;
+	border-radius: 3px;
+	border-color: black;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+
+.add {
+	font-size: 20px;
+	font-display: bold;
+	color: #0a2c12;
 }
